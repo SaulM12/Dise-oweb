@@ -1,0 +1,232 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content"wigth=device-width, user-sacalable=no, initial-scale=1.0, maximun-sacale=1.0, minimun-sacale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link href="style.css"rel="stylesheet">
+	<!--<link  rel="stylesheet" type="text/css" href="style.css"/-->
+  </head>
+  <body> 
+        <header>
+      <!-- Nav bar  -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+  
+           <a class="navbar-brand" href="https://www.unibe.edu.ec/">
+            <img src="img/Unibe.png" height="40" width="40"class="d-inline-block align-top" alt="">UNIB.E</a>
+             <!-- Optimizacion de navbar para mobiles-->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+             <li class="nav-item ">
+                  <a class="nav-link" href="inscripcion.html">Inscripción</a>
+             </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Becas</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Matricula</a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                 <a class="dropdown-item" href="#">Ficha Socio-económica</a>
+                 <a class="dropdown-item" href="#">Matrícula Inicial</a>
+                 <a class="dropdown-item" href="#">Matrícula Regular</a>
+                 <a class="dropdown-item" href="#">Matrícula por Homologación</a>
+               </div>
+              </li>
+           </ul>
+                 <form class="form-inline my-2 my-lg-0">
+                 <button class="btn btn-ingr mr-sm-2" type="button">Ingresar</button>
+               <button class="btn btn-sm btn-secondary my-2 " type="button">Registrarse</button>
+                   </form>
+              </div>
+       </nav>
+   </header>  
+      <!-- fromulario datos estudiante-->
+    <div class="card"style="background-color:#bdbdbd;" >
+      <h5 class="card-header">Proceso de inscripción en línea de la Universidad Iberoamericana del Ecuador.</h5>
+      </div>
+      <div class="card">
+        <div class="card-body">
+        <h5 class="card-title">Consideraciones</h5>
+        <p class="card-text">Llene todos los campos con la información requerida, recuerde que los campos marcados con <span style="color:red">*</span> son obligatorios.</p>
+      </div>
+    </div>
+     
+      <div class="text-md-center">
+         <h5 >Carrera <span style="color:red">*</span></h5>
+      <div class="form-group col-md-12">
+      <label for="inputState"></label>
+        <select id="inputState" class="form-control">
+          <option selected>Selecciona una carrera</option>
+          <option>CONTABILIDAD Y AUDITORÍA</option>
+          <option>DERECHO</option>
+          <option>ECONOMÍA</option>
+          <option>INGENIERÍA DE SOFTWARE</option>
+          <option>LICENCIATURA EN ADMINISTRACIÓN DE EMPRESAS</option>
+          <option>LICENCIATURA EN ENFERMERÍA</option>
+          <option>LICENCIATURA EN GASTRONOMÍA</option>
+          <option>LICENCIATURA EN NUTRICIÓN Y DIETÉTICA</option>
+          <option>LICENCIATURA EN PRODUCCIÓN PARA MEDIOS DE COMUNICACIÓN</option>
+          <option>LICENCIATURA EN TURISMO</option>
+        </select>
+      </div>
+      <h5>Datos personales</h5>
+        <form class="needs-validation" >
+
+             <div class="form-group col-md-6 text-md-center">
+              <label for="inputName4">Nombres<span style="color:red">*</span></label>
+              <input type="text" class="form-control" id="inputName4" placeholder="Nombres" required>
+             </div>
+             <div class="form-group col-md-6 ml-1" >
+              <label for="inputLastName4">Apellidos<span style="color:red">*</span></label>
+              <input type="text" class="form-control" id="inputLastName4" placeholder="Apellidos" required>
+             </div>
+
+
+             <div class="form-group col-md-6 ml-1">
+              <label for="inputCi4">Cédula<span style="color:red">*</span></label>
+              <input type="textxt" class="form-control" id="inputCi4" placeholder="# Cédula"required>
+      
+             </div>
+              <div class="form-group col-md-6 ml-1">
+                <label for="inputBornDate4">Fecha Nacimiento<span style="color:red">*</span></label>
+                 <input type="date" class="form-control" id="inputBornDate4" required>
+        
+             </div>
+             <div class="form-group col-md-6 ml-1">
+              <label for="inputAdress4">Dirección<span style="color:red">*</span></label>
+              <input type="text" class="form-control" id="inputAdress4" placeholder="Cuidad, Parroquia, Barrio, Calle, #Casa"required>
+    
+             </div>
+             <div class="form-group col-md-6 ml-1">
+              <label for="inputPhone4">Teléfono<span style="color:red">*</span></label>
+              <input type="tel" class="form-control" id="inputPhone4" placeholder="# Teléfono" required>
+    
+             </div>
+             <div class="form-group col-md-6 ml-1">
+              <label for="inputMail4">Correo electrónico<span style="color:red">*</span></label>
+              <input type="email" class="form-control" id="inputMail4" placeholder="ejemplo@gmail.com" required>
+            </div>
+            <!-- Info academica-->
+
+            <h5>Informacion académica</h5>
+            <div class="form-group col-md-6 ml-1">
+              <label for="inputName4">Colegio de origen<span style="color:red">*</span></label>
+              <input type="text" class="form-control" placeholder="Nombre del colegio" id="inputName4"required>
+             </div>
+             <label for="inputState"></label>
+
+        <div class="form-group col-md-6">
+      <label for="inputState">Tipo de colegio<span style="color:red">*</span></label>
+        <select id="inputState" class="form-control">
+          <option selected>Seleccione el tipo de colegio</option>
+          <option>Privado</option>
+          <option>Fiscal</option>
+          <option>Municipal</option>
+        </select>
+      </div>
+             <div class="form-group col-md-6 ml-1">
+              <label for="inputCi4">Año de grado<span style="color:red">*</span></label>
+              <input type="textxt" class="form-control" id="inputCi4" placeholder="2020"required>
+      
+             </div>
+          <h5>Archivos adjuntos</h5>
+
+             <div class="form-group col-md-4 ml-1 ">
+                <label for="tittleFormControlFile1">Titulo de bachiller escaneado<span style="color:red">*</span></label>
+               <input type="file" class="form-control-file" id="tittleFormControlFile1" required>
+              </div>
+              <div class="form-group col-md-4 ml-1">
+                <label for="tittleFormControlFile1">Foto del estudiante<span style="color:red">*</span></label>
+               <input type="file" class="form-control-file" id="picFormControlFile1">
+              </div>
+               <div class="form-group col-md-4 ml-1">
+                <label for="tittleFormControlFile1">Papeleta de votación escaneada<span style="color:red">*</span></label>
+               <input type="file" class="form-control-file" id="voteFormControlFile1">
+              </div>
+              <div class="form-group col-md-4 ml-1">
+                <label for="tittleFormControlFile1">Voucher del pago escaneado<span style="color:red">*</span></label>
+               <input type="file" class="form-control-file" id="voucherFormControlFile1" required>
+              </div>
+            <div class="form-group row">
+              <div class="col-sm-10 text-center">
+                <button type="submit" class="btn btn-enviar btn-lg" data-toggle="tooltip" data-placement="top" title="Envia tu información de inscripción">Enviar el formulario</button>
+                 <a class="btn btn-sm btn-outline-secondary my-2 " href="index.html" type="button">Cancelar</a>
+              </div>
+            </div>
+        </form> 
+    </div>   
+ </div> 
+        <!-- FOOTER     -->
+
+   <footer class="page-footer font-small bg-dark text-white">
+
+    <div style="background-color: #000;">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-1 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Redes sociales</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-3 text-center text-md-right">
+
+            <!-- Facebook -->
+            <a type="button" class="btn-floating btn-fb">
+                <i class="nav-link" href="https://es-la.facebook.com/unibe.edu.ec"><img src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-icono-de-facebook-logo-by-vexels.png" height="40" width="40"></i>
+            <!-- Twitter -->
+             <a type="button" class="btn-floating btn-tw">
+                <i class="nav-link" href="https://twitter.com/unibe_ec?ref_src=twsrc%5Etfw&ref_url=http%3A%2F%2Flocalhost%2Fjoomla%2F"><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" height="40" width="40"></i>
+             </a>
+            <!--Instagram-->
+           <a type="button" class="btn-floating btn-tw">
+                 <i class="nav-link" href="https://www.instagram.com/unibe_ec/?hl=es"><img src="https://www.stickpng.com/assets/thumbs/580b57fcd9996e24bc43c521.png" height="40" width="40"></i></a>
+
+          </div>
+          <div class="col-md-6 col-lg-3 text-center text-md-right mb-4 mb-md-0">
+            <h6 class="mb-0">Contacto</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-3 ">
+          <ul>
+            <!-- Dirección -->
+            <li class="fas fa-envelope mr-3"><img src="img/home.png" height="30" width="30"> Av. 9 de Octubre y Sta. María</li>
+            <!-- Correo -->
+             <li class="fas fa-envelope mr-3"><img src="img/mail.png" height="40" width="40">info@unibe.edu.ec</li>
+          
+            <!--Teléfono-->
+           <p><li class="fas fa-phone mr-3"><img src="img/phone.png" height="30" width="30"> 593 2 2903573 - 593 2 2230401 </li></p>
+        </ul>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3"style="background-color: #000;">© 2020 Copyright:
+      <a href="https:www.unibe.edu.ec/"> UNIBE.edu.ec</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+     <script src="js/jquery-3.5.1.min.js"></script>
+   	 <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
