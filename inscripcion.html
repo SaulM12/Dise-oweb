@@ -21,7 +21,7 @@
              <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
                   </li>
              <li class="nav-item ">
                   <a class="nav-link" href="inscripcion.html">Inscripción</a>
@@ -48,7 +48,7 @@
    </header>  
       <!-- fromulario datos estudiante-->
     <div class="card"style="background-color:#bdbdbd;" >
-      <h5 class="card-header">Proceso de inscripción en línea de la Universidad Iberoamericana del Ecuador.</h5>
+      <h5 class="card-header">Inscripción en línea Universidad Iberoamericana del Ecuador.</h5>
       </div>
       <div class="card">
         <div class="card-body">
@@ -56,27 +56,28 @@
         <p class="card-text">Llene todos los campos con la información requerida, recuerde que los campos marcados con <span style="color:red">*</span> son obligatorios.</p>
       </div>
     </div>
-     
+    <div class="container-fluid">
       <div class="row1">
          <h5 >Carrera <span style="color:red">*</span></h5>
+    <form class="needs-validation" >
       <div class="form-group col-md-6">
       <label for="inputState"></label>
-        <select id="inputState" class="form-control">
-          <option selected>Selecciona una carrera</option>
-          <option>CONTABILIDAD Y AUDITORÍA</option>
-          <option>DERECHO</option>
-          <option>ECONOMÍA</option>
-          <option>INGENIERÍA DE SOFTWARE</option>
-          <option>LICENCIATURA EN ADMINISTRACIÓN DE EMPRESAS</option>
-          <option>LICENCIATURA EN ENFERMERÍA</option>
-          <option>LICENCIATURA EN GASTRONOMÍA</option>
-          <option>LICENCIATURA EN NUTRICIÓN Y DIETÉTICA</option>
-          <option>LICENCIATURA EN PRODUCCIÓN PARA MEDIOS DE COMUNICACIÓN</option>
-          <option>LICENCIATURA EN TURISMO</option>
+        <select id="inputState" class="form-control" required>
+          <option value="">Selecciona una carrera</option>
+          <option value="1">CONTABILIDAD Y AUDITORÍA</option>
+          <option value="2">DERECHO</option>
+          <option value="3">ECONOMÍA</option>
+          <option value="4">INGENIERÍA DE SOFTWARE</option>
+          <option value="5">LICENCIATURA EN ADMINISTRACIÓN DE EMPRESAS</option>
+          <option value="6">LICENCIATURA EN ENFERMERÍA</option>
+          <option value="7">LICENCIATURA EN GASTRONOMÍA</option>
+          <option value="8">LICENCIATURA EN NUTRICIÓN Y DIETÉTICA</option>
+          <option value="9">LICENCIATURA EN PRODUCCIÓN PARA MEDIOS DE COMUNICACIÓN</option>
+          <option value="10">LICENCIATURA EN TURISMO</option>
         </select>
       </div>
       <h5>Datos personales</h5>
-        <form class="needs-validation" >
+
 
              <div class="form-group col-md-6 text-md-left">
               <label for="inputName4">Nombres<span style="color:red">*</span></label>
@@ -90,7 +91,7 @@
 
              <div class="form-group col-md-6 ml-1">
               <label for="inputCi4">Cédula<span style="color:red">*</span></label>
-              <input type="textxt" class="form-control" id="inputCi4" placeholder="# Cédula"required>
+              <input type="textxt" class="form-control" id="inputCi4" placeholder="# Cédula" pattern="[0-9]{10}" required>
       
              </div>
               <div class="form-group col-md-6 ml-1">
@@ -105,7 +106,7 @@
              </div>
              <div class="form-group col-md-6 ml-1">
               <label for="inputPhone4">Teléfono<span style="color:red">*</span></label>
-              <input type="tel" class="form-control" id="inputPhone4" placeholder="# Teléfono" required>
+              <input type="tel" class="form-control" id="inputPhone4" placeholder="# Teléfono" maxlength="12" pattern="[0-9]{10}" required >
     
              </div>
              <div class="form-group col-md-6 ml-1">
@@ -123,16 +124,16 @@
 
         <div class="form-group col-md-6">
       <label for="inputState">Tipo de colegio<span style="color:red">*</span></label>
-        <select id="inputState" class="form-control">
-          <option selected>Seleccione el tipo de colegio</option>
-          <option>Privado</option>
-          <option>Fiscal</option>
-          <option>Municipal</option>
+        <select id="inputState" class="form-control" required>
+          <option value="">Seleccione el tipo de colegio</option>
+          <option value="1">Privado</option>
+          <option value="2">Fiscal</option>
+          <option value="3">Municipal</option>
         </select>
       </div>
              <div class="form-group col-md-6 ml-1">
               <label for="inputCi4">Año de grado<span style="color:red">*</span></label>
-              <input type="textxt" class="form-control" id="inputCi4" placeholder="2020"required>
+              <input type="textxt" class="form-control" id="inputCi4" pattern="[0-9]{4    }" placeholder="2020"required >
       
              </div>
           <h5>Archivos adjuntos</h5>

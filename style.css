@@ -1,16 +1,6 @@
-.main-container{
-  background-color:#0000;
-width: 100%;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+.container-breakpoint{
+max-height: 100%;
 }
-.row{
-  width:100%;
-  padding: 1px;
-  margin-left: 1px;
-}
-
 .navbar {
   background: rgba(0,31,64,1);
 background: -moz-linear-gradient(left, rgba(0,31,64,1) 0%, rgba(0,31,64,1) 43%, rgba(4,63,122,1) 100%);
@@ -23,6 +13,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001f40', end
 }
 .footer{
   background: #001933;
+  width: 100%;
+-webkit-box-shadow: inset 10px 10px 10px -1px rgba(0,0,0,0.59);
+-moz-box-shadow: inset 10px 10px 10px -1px rgba(0,0,0,0.59);
+box-shadow: inset 10px 10px 10px -1px rgba(0,0,0,0.59);
    -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -249,4 +243,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001f40', end
 }
 #login .container #login-row #login-column #login-box #login-form #register-link {
   margin-top: -85px;
+}
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
