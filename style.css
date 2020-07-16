@@ -1,3 +1,16 @@
+.main-container{
+  background-color:#0000;
+width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.row{
+  width:100%;
+  padding: 1px;
+  margin-left: 1px;
+}
+
 .navbar {
   background: rgba(0,31,64,1);
 background: -moz-linear-gradient(left, rgba(0,31,64,1) 0%, rgba(0,31,64,1) 43%, rgba(4,63,122,1) 100%);
@@ -10,6 +23,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001f40', end
 }
 .footer{
   background: #001933;
+   -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .card1 {
   color: #D1D1D1;
