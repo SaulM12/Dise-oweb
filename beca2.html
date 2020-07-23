@@ -1,0 +1,178 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devide-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="style.css"rel="stylesheet">
+  </head>
+  <body>
+	 <header>
+		  <!-- Nav bar  -->
+  		  <nav class="navbar navbar-expand-lg navbar-dark" >
+  
+ 		       <a class="navbar-brand" href="https://www.unibe.edu.ec/">
+ 		       	<img src="img/Unibe.png" height="40" width="40"class="d-inline-block align-top" alt="">UNIB.E</a>
+ 		         <!-- Optimizacion de navbar para mobiles-->
+  		            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    	               <span class="navbar-toggler-icon"></span>
+  		            </button>
+  			     <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+    			     <ul class="navbar-nav mr-auto">
+							    <li class="nav-item active">
+							      <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+							    </li>
+						 <li class="nav-item ">
+								  <a class="nav-link" href="inscripcion.html">Inscripción</a>
+						 </li>
+						  <li class="nav-item ">
+								<a class="nav-link" href="#">Becas</a>
+						  </li>
+						  <li class="nav-item dropdown ">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Matrícula</a>
+							 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								 <a class="dropdown-item" href="fs.html">Ficha Socio-económica</a>
+								 <a class="dropdown-item" href="login.html">Matrícula</a>
+								 <a class="dropdown-item" href="login2.html">Matrícula Idiomas</a>
+							 </div>
+						  </li>
+					 </ul>
+  							 <form class="form-inline my-2 my-lg-0">
+      					 <a class="btn btn-ingr mr-sm-2" href="login.html" type="button">Ingresar</a>
+      						 </form>
+      			  </div>
+		   </nav>
+	 </header>	
+	    <div class="card"style="background-color:#bdbdbd;" >
+      <h5 class="card-header">Formulario postulación a una beca</h5>
+      </div>
+      <div class="card">
+        <div class="card-body">
+        <h5 class="card-title">Consideraciones</h5>
+        <p class="card-text">Llene todos los campos con la información requerida, recuerde que los campos marcados con <span style="color:red">*</span> son obligatorios.</p>
+      </div>
+    </div>
+<div class="container-fluid">
+      <div class="row1">
+         
+    <form class="needs-validation" >
+    	<h5>Formulario</h5>
+    	<div class="form-group col-md-6 ml-1">
+              <label for="inputCi4">Cédula postulante<span style="color:red">*</span></label>
+              <input type="textxt" class="form-control" id="inputCi4" placeholder="# Cédula" pattern="[0-9]{10}" required>
+         </div>
+         <h5 >Beca <span style="color:red">*</span></h5>
+      <div class="form-group col-md-6">
+      <label for="inputState"></label>
+        <select id="inputState" class="form-control" required>
+          <option value="">Tipo de beca</option>
+          <option value="1">EXELENCIA ACADÉMICA O SNNA</option>
+          <option value="2">BECA POR DISCAPACIDAD</option>
+          <option value="3">BECA DEPORTISTAS DESTACADOS</option>
+          <option value="4">BECA POR ACTIVIDADES CULTURALES</option>
+          <option value="5">BECA POR DESARROLLO PROFECIONAL</option>
+          <option value="6">BECA SOCIOECONÓMICA</option>
+          <option value="7">BECA HONORIFICA</option>
+          <option value="8">BECA POR INVESTIGACIÓN</option>
+          <option value="9">BECAS PARA VICTIMAS DE VIOLENCIA DE GÉNERO O VULNERACIÓN DE DDHH</option>
+        </select>
+      </div>
+          <h5>Archivos adjuntos</h5>
+
+             <div class="form-group col-md-4 ml-1 ">
+                <label for="tittleFormControlFile1">Solicitud<span style="color:red">*</span></label>
+               <input type="file" class="form-control-file" id="tittleFormControlFile1" required>
+              </div>
+              <div class="form-group col-md-4 ml-1 ">
+                <label for="tittleFormControlFile1">Formulario de beca<span style="color:red">*</span></label>
+               <input type="file" class="form-control-file" id="tittleFormControlFile1" required>
+              </div>
+              <div class="form-group col-md-4 ml-1">
+                <label for="tittleFormControlFile1">Copia de cédula de ciudadanía.<span style="color:red">*</span></label>
+               <input type="file" class="form-control-file" id="picFormControlFile1">
+              </div>
+               <div class="form-group col-md-4 ml-1">
+                <label for="tittleFormControlFile1">Recibo de pago a la UNIB.E con saldo 0<span style="color:red">*</span></label>
+               <input type="file" class="form-control-file" id="voteFormControlFile1">
+              </div>
+              <div class="form-group col-md-8 ml-1">
+                <label for="tittleFormControlFile1">Documentos que respalden su situación económica (todos los documentos en un mismo archivo)</label>
+               <input type="file" class="form-control-file" id="voucherFormControlFile1">
+              </div>
+              <div class="form-group col-md-8 ml-1">
+                <label for="tittleFormControlFile1">Carné de discapacidad</label>
+               <input type="file" class="form-control-file" id="voucherFormControlFile1">
+              </div>
+            <div class="form-group row">
+              <div class="col-sm-10 text-center">
+                <button type="submit" class="btn btn-reg btn-lg" data-toggle="tooltip" data-placement="top" title="Envia tu información de inscripción">Enviar su solicitud</button>
+                 <a class="btn btn-sm btn-outline-secondary my-2 " href="becas.html" type="button">Cancelar</a>
+              </div>
+            </div>
+        </form> 
+    </div>   
+</div>
+       <footer class="footer font-small text-white">
+
+			<div class="container-fluid">
+
+			        <!-- Grid row-->
+			    <div class="row py-4 d-flex align-items-center">
+
+			          <!-- Grid column -->
+			          <div class="col-lg-2 text-center text-md-left mb-4 mb-md-0">
+			            	<h6 class="mb-0">Redes sociales</h6>
+			          </div>
+			          <!-- Grid column -->
+
+			          <!-- Grid column -->
+			          <div class="col-lg-4 text-center text-md-left">
+
+				            <!-- Facebook -->
+				            <a type="button" class="btn-floating btn-fb" href="https://es-la.facebook.com/unibe.edu.ec">
+				                <i class="nav-link" ><img src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-icono-de-facebook-logo-by-vexels.png" height="40" width="40"></i>
+				              </a>
+				            <!-- Twitter -->
+				             <a type="button" class="btn-floating btn-tw"  href="https://twitter.com/unibe_ec?ref_src=twsrc%5Etfw&ref_url=http%3A%2F%2Flocalhost%2Fjoomla%2F">
+				                <i class="nav-link"><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" height="40" width="40"></i>
+				             </a>
+				            <!--Instagram-->
+				           <a type="button" class="btn-floating btn-tw"href="https://www.instagram.com/unibe_ec/?hl=es">
+				                 <i class="nav-link" ><img src="https://www.stickpng.com/assets/thumbs/580b57fcd9996e24bc43c521.png" height="40" width="40"></i></a>
+			          </div>
+			          <div class="col-lg-2 text-center text-md-right mb-4 mb-md-0">
+			            <h6 class="mb-0">Contacto</h6>
+			          </div>
+			          <!-- Grid column -->
+			        <div class="col-lg-4 ">
+					    <ul class="list-unstyled">
+					          <li>
+					             <p>
+					              <i class="fas fa-envelope mr-3"></i><img src="img/home.png" height="30" width="30"> Av. 9 de Octubre y Sta. María</p>
+					          </li>
+					          <li>
+					             <p>
+					              <i class="fas fa-envelope mr-3" ></i> <img src="img/mailw.png" height="30" width="30"> info@unibe.edu.ec</p>
+					          </li>
+					          <li>
+					             <p>
+					              <i class="fas fa-phone mr-3"></i> <img src="img/phone.png" height="30" width="30"> +593 2 2903573 - +593 2 2230401 </p>
+					          </li>
+					    </ul>
+			        </div>
+			          <!-- Grid column -->
+			    </div>
+			        <!-- Grid row-->
+			</div>
+
+			    <!-- Copyright -->
+			 <div class="footer-copyright text-center py-3"style="background-color: #000;">© 2020 Copyright:
+			      <a href="https:www.unibe.edu.ec/"> UNIBE.edu.ec</a>
+			</div>
+			    <!-- Copyright -->
+	   </footer>
+		<!-- Footer -->
+    	<script src="js/jquery-3.5.1.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
