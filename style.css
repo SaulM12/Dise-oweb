@@ -71,6 +71,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   transition: 0.3s;
 }
  .card4-header{
+  border: 0.5px solid #000000;
+  color: #000000; 
 background: rgba(214,214,214,1);
 background: -moz-linear-gradient(left, rgba(214,214,214,1) 0%, rgba(186,186,186,0.99) 28%, rgba(0,31,64,0.95) 97%, rgba(0,31,64,0.95) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(214,214,214,1)), color-stop(28%, rgba(186,186,186,0.99)), color-stop(97%, rgba(0,31,64,0.95)), color-stop(100%, rgba(0,31,64,0.95)));
@@ -82,8 +84,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d6d6', end
   padding: 10px;
   border-bottom: 0.5px solid #000000;
  }
+ .card41-header{
+    border: 0.5px solid #000000;
+   color: #000000; 
+  background: rgba(214,214,214,1);
+background: -moz-linear-gradient(left, rgba(214,214,214,1) 0%, rgba(199,199,199,0.99) 28%, rgba(186,186,186,0.98) 53%, rgba(255,244,38,0.95) 97%, rgba(247,255,0,0.95) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(214,214,214,1)), color-stop(28%, rgba(199,199,199,0.99)), color-stop(53%, rgba(186,186,186,0.98)), color-stop(97%, rgba(255,244,38,0.95)), color-stop(100%, rgba(247,255,0,0.95)));
+background: -webkit-linear-gradient(left, rgba(214,214,214,1) 0%, rgba(199,199,199,0.99) 28%, rgba(186,186,186,0.98) 53%, rgba(255,244,38,0.95) 97%, rgba(247,255,0,0.95) 100%);
+background: -o-linear-gradient(left, rgba(214,214,214,1) 0%, rgba(199,199,199,0.99) 28%, rgba(186,186,186,0.98) 53%, rgba(255,244,38,0.95) 97%, rgba(247,255,0,0.95) 100%);
+background: -ms-linear-gradient(left, rgba(214,214,214,1) 0%, rgba(199,199,199,0.99) 28%, rgba(186,186,186,0.98) 53%, rgba(255,244,38,0.95) 97%, rgba(247,255,0,0.95) 100%);
+background: linear-gradient(to right, rgba(214,214,214,1) 0%, rgba(199,199,199,0.99) 28%, rgba(186,186,186,0.98) 53%, rgba(255,244,38,0.95) 97%, rgba(247,255,0,0.95) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d6d6', endColorstr='#f7ff00', GradientType=1 );
+padding: 10px;
+  border-bottom: 0.5px solid #000000;
+ }
 .card2 {
-  color: #D1D1D1;
+  color: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   transition: 0.3s;
 background: rgba(4,63,122,1);
